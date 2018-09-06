@@ -14,5 +14,5 @@
 
 ## Webpack
 * Bundler: Allows you to split the JS code into multiple files and then Ship one bundle in the End.
-* Allows babel integration to bundling process to check if any ES6 code needs to be converted to ES5.
+* Allows babel integration to bundling process to check if any ES6 code needs to be converted to ES5. Also allows TypeScript integration for example.
 * Allows to optimize(minify) code during the bundling process.
