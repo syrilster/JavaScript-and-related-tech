@@ -19,3 +19,8 @@
     });
     ```
     
+ ## How Vue.js works
+ * Creates its own virtual DOM with the information provided. This is not the usual browser DOM.
+ * Parses the virtual DOM for Vue commands like the {{ name }} and replaces it with valid html values. 
+ * Render virtual DOM as a real DOM to be used by the browser.
+    
