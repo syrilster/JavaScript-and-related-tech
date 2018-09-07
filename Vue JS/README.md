@@ -49,4 +49,27 @@
   <p v-if="name == 'Syril'">Name Changed !!</p>
   ```
 
+## Outputting Lists
+* Adding new elements dynamically as shown below:
+  ```
+  <button v-on:click="addElement">Add Element</button>
+  <ul>
+    <li v:for="element in elements"> Element {{ element }}</li>
+  </ul>
+  
+  //JS Code:
+  new Vue({
+      el: '#appName',
+      data: {
+        elements: []
+      },
+      methods: {
+        addElement: function(){
+          this.elements.push(this.elements.length + 1);
+        }
+      }
+    });
+  
+  ```
+
     
