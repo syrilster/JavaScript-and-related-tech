@@ -54,7 +54,7 @@
   ```
   <button v-on:click="addElement">Add Element</button>
   <ul>
-    <li v:for="element in elements"> Element {{ element }}</li>
+    <li v-for="element in elements"> Element {{ element }}</li>
   </ul>
   
   //JS Code:
@@ -70,6 +70,15 @@
       }
     });
   
+  ```
+## Binding HTML Attributes and property to data
+* Using the v-bind:attributeName.
+  ```
+  <li v-for="element in elements"
+      v-bind:id="'element ' + element"> Element {{ element }}</li>
+      
+  //Will generate HTML
+  <li id="element 1">Element 1</li>
   ```
 
     
