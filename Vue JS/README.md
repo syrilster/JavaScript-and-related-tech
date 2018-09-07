@@ -42,4 +42,11 @@
   ```
 * Note that the method cannot be any javascript function outside of the Vue instance. It should be a method name matching the methods tag inside a Vue instance.
 * Access variables, objects inside Vue instance using the this keyword. Ex: this.name from the data tag name field.
+
+## Render content Conditionally
+* v-if directive for conditional rendering of DOM element. Example:
+  ```
+  <p v-if="name == 'Syril'">Name Changed !!</p>
+  ```
+
     
