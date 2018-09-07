@@ -119,4 +119,21 @@
 * v-bind:PROPERTY  =>  :PROPERTY. Example: v-bind:style="..."  => :style="..." 
 * v-on:EVENT  => @EVENT. Example: v-on:click="..."  => @click="..." 
 
+## Limitations of multiple Vue instances
 **Multiple Vue instances can be used to control different parts of the HTML.**
+* Vue instances can only control the first occurance of the selector and then ignore the second one. Example: The below code is going to print the output as 
+  * Syril
+  * {{username}}
+  ```
+  <div class="username"> {{username}} </div>
+  <div class="username"> {{username}} </div>
+
+  //JS Code
+  new Vue({
+      el: '.username',
+      data: {
+        username: 'Syril'
+      }
+    });
+  ```
+
