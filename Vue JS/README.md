@@ -114,3 +114,7 @@
   }
       
   ```
+## Shorthands for v-bind and v-on
+* There are shorthands you can use for these common directives though.
+* v-bind:PROPERTY  =>  :PROPERTY. Example: v-bind:style="..."  => :style="..." 
+* v-on:EVENT  => @EVENT. Example: v-on:click="..."  => @click="..." 
