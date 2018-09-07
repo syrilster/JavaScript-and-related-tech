@@ -80,5 +80,24 @@
   //Will generate HTML
   <li id="element 1">Element 1</li>
   ```
-
+## Styling elements dynamically
+* Using the **v-bind:style**. For example to set background color based on the element order. i.e even number or odd
+  ```
+  <li v-for="element in elements"
+      v-bind:id="'element ' + element"
+      v-bind:style="{backGroundColor: getColor(element)}"> Element {{ element }}</li>
+      
+  //JS Code:
+  new Vue({
+      el: '#appName',
+      data: {
+        elements: []
+      },
+      methods: {
+        getColor: function(number){
+          return number % 2 ==0 ? 'green' : 'red';  
+        }
+      }
+    });
+   ```
     
