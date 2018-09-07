@@ -138,6 +138,7 @@
   ```
 ## Creating and using components
 * Example to register a component below: This will print the username twice.
+* Fiddle: https://jsfiddle.net/syrilster/h2rsgb7j/
   ```
   <script src="https://unpkg.com/vue"></script>
   <div id="app">
@@ -155,5 +156,7 @@
     },
     template: '<p>{{username}}</p>'
   });
+  
+  new Vue({ el: '#app' });
  
   ```
