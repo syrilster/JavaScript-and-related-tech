@@ -118,3 +118,5 @@
 * There are shorthands you can use for these common directives though.
 * v-bind:PROPERTY  =>  :PROPERTY. Example: v-bind:style="..."  => :style="..." 
 * v-on:EVENT  => @EVENT. Example: v-on:click="..."  => @click="..." 
+
+**Multiple Vue instances can be used to control different parts of the HTML.**
