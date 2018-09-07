@@ -100,4 +100,5 @@
       }
     });
    ```
+* Note that the backGroundColor attribute is in camel case and the getColor is a method in the Vue instance.
     
