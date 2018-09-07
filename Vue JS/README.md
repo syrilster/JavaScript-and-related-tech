@@ -160,3 +160,25 @@
   new Vue({ el: '#app' });
  
   ```
+## Passing data into components
+* Using the props inside the Vue component.
+* https://jsfiddle.net/syrilster/j7cufe1a/
+  ```
+  <script src="https://unpkg.com/vue"></script>
+  <div id="app">
+  <app-username v-bind:username="'Syril'"></app-username>
+  <app-username v-bind:username="'Anju'"></app-username>
+  </div>
+  
+  Vue.component('app-username', {
+	props: ['username'],
+  data: function() {
+    return {
+      //username: 'Syril'
+    }
+  },
+  template: '<p>{{username}}</p>'
+  });
+
+  new Vue({ el: '#app' });
+  ```
