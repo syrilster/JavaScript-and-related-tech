@@ -72,7 +72,7 @@
   
   ```
 ## Binding HTML Attributes and property to data
-* Using the v-bind:attributeName.
+* Using the v-bind:attributeName to generate dynamic id attribute.
   ```
   <li v-for="element in elements"
       v-bind:id="'element ' + element"> Element {{ element }}</li>
