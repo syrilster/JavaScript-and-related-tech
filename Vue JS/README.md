@@ -136,4 +136,24 @@
       }
     });
   ```
+## Creating and using components
+* Example to register a component below: This will print the username twice.
+  ```
+  <script src="https://unpkg.com/vue"></script>
+  <div id="app">
+  <app-username></app-username>
+  <app-username></app-username>
+  </div>
 
+
+  
+  Vue.component('app-username', {
+    data: function() {
+      return {
+        username: 'Syril'
+      }
+    },
+    template: '<p>{{username}}</p>'
+  });
+ 
+  ```
