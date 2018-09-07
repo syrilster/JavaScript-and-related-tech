@@ -102,3 +102,15 @@
    ```
 * Note that the backGroundColor attribute is in camel case and the getColor is a method in the Vue instance.
     
+## Setting CSS classes dynamically
+* Using the **v-bind:class**. Below example to change the css of the name displayed when a condition is met.
+  ```
+  <p v-bind:class="{updated: name == 'Syril'}"> {{ name }}</p>
+  
+  // CSS Code
+  .updated {
+    color: black,
+    background-color: red
+  }
+      
+  ```
