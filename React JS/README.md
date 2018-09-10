@@ -35,20 +35,33 @@
     ```
 ## React Component
 * Two ways to create a component:
-    * Write a function as a component
+    * Write a function as a component with props and React will do the object mapping. Here props.name is set
         ```
-        let name = "Syril";
-        function App(){
+        function App(props){
             return (
             <div>
-                <p>{name}</p>
+                <p>{props.name}</p>
                 <button>Change Me</button>
             </div>
         );
         }
 
         const element = 
-        ReactDOM.render(<App/>, document.querySelector('#demoApp'));
+        ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
         ```
-    * ES6 class to write a component
-* 
+    * Using ES6 classes to take leverage of state which can be changed inside the component. render() is the method where the JSX code needs to be present. The props is a property provided by the class and hence this.props.
+       ```
+       class App extends React.Component {
+            render(){
+                return (
+                <div>
+                    <p>{this.props.name}</p>
+                    <button>Change Me</button>
+                </div>
+            );	
+            }
+        }
+        const element = 
+                    ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
+       ```
+
