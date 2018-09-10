@@ -29,4 +29,4 @@
   }
   ```
 * module section to load different modular parts of the app. For example: Vue.js files should use Vue module loader, .js files should use Babel loader, .jpeg and .png files should use file loader etc.
-* plugins applied to the bundled code. For example: If env is production then remove dev related tools.
+* plugins applied to the bundled code. For example: If env is production then remove dev related tools, uglyfy plugin to minify and optimize the code after the bundling is completed.
