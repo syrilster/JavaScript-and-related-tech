@@ -17,4 +17,19 @@
     const element = <p> {name} </p>
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
-    
+## Handling events and updating the DOM
+* DOM updations are tricky without the use of components. The example below does not change the name on click of the button inspite of no errors:
+* https://jsfiddle.net/syrilster/40gfL7ey/5/
+    ```
+        let name = "Syril";
+        function changeMe(){
+            name = 'Anju';
+        }
+
+        const element = (<div>
+            <p>{name}</p>
+            <button onClick={changeMe}>Change Me</button>
+        </div>
+        )
+        ReactDOM.render(element, document.querySelector('#demoApp'));
+    ```
