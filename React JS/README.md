@@ -33,3 +33,22 @@
         )
         ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
+## React Component
+* Two ways to create a component:
+    * Write a function as a component
+        ```
+        let name = "Syril";
+        function App(){
+            return (
+            <div>
+                <p>{name}</p>
+                <button>Change Me</button>
+            </div>
+        );
+        }
+
+        const element = 
+        ReactDOM.render(<App/>, document.querySelector('#demoApp'));
+        ```
+    * ES6 class to write a component
+* 
