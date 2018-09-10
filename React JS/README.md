@@ -59,7 +59,7 @@
                     <button>Change Me</button>
                 </div>
             );	
-            }
+          }
         }
         const element = 
                     ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
