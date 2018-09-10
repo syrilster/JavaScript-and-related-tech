@@ -9,3 +9,12 @@
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
 * const and let are new keywords in ES6 used to create constants and variables.
+
+## Outputting Dynamic Content
+* Using a single braces unlike angular and Vue js as HTML in react is rendered in JS code. Example below:
+    ```
+    const name = 'Syril';
+    const element = <p> {name} </p>
+    ReactDOM.render(element, document.querySelector('#demoApp'));
+    ```
+    
