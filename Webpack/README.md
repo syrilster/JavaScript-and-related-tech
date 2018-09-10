@@ -10,7 +10,7 @@
 * npm install to download and resolve the dependencies and put in node_modules folder.
 * npm also allows you to define some scripts to be run. For example a build script to be defined in package.json and then user can provide the command npm build to execute the script.
 
-## How webpack works: Entry, output and module
+## How webpack works: Entry, output, module and plugins
 * webpack.config.js file have the entry and output sections.
 * Entry section specifies the main.js file
 * Output section is related to location and the name of the bundle file.
