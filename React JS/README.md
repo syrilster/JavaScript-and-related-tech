@@ -119,3 +119,21 @@
 
     const element = ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
     ```
+## Rendering conditional content
+* using an if condition and the logic required:
+    ```
+    render(){
+		let updateParagraph = '';
+		if(this.state.name != this.props.name){
+			updateParagraph = <p> Name has been updated </p>;
+		}
+		return (
+		<div>
+			<p>{this.state.name}</p>
+			{updateParagraph}
+			<button onClick={this.changeName.bind(this)}>Change Me</button>
+		</div>
+		);	
+      }
+    }
+   ```
