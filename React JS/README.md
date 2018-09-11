@@ -138,4 +138,56 @@
     }
    ```
 ## Outputting Lists
-* Example below: 
+* Example below: https://jsfiddle.net/syrilster/9mh2wqpL/1/
+	```
+	class App extends React.Component {
+
+	constructor(props){
+		super(props);
+		this.state = {
+			name: props.name,
+			elements: []
+		};
+	}
+	
+	changeName() {
+		this.setState({
+			name: 'Anju'
+		});
+	}
+	
+	addElements() {
+	const oldElements = this.state.elements;
+		this.setState({
+				elements: oldElements.concat(oldElements.length + 1)	
+		});
+	}
+	
+	render(){
+		let updateParagraph = '';
+		let list = this.state.elements.map(
+			(el) => {
+				return <li key={el}>{el}</li>;
+			}
+		);
+		
+		if(this.state.name != this.props.name){
+			updateParagraph = <p> Name has been updated </p>;
+		}
+		
+		
+		return (
+		<div>
+			<p>{this.state.name}</p>
+			{updateParagraph}
+			<button onClick={this.changeName.bind(this)}>Change Me</button><br></br>
+			<button onClick={this.addElements.bind(this)}>Add Element</button>
+			<ul>{list}</ul>
+		</div>
+		);	
+	     }
+	  }
+
+
+	const element = ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
+	```
