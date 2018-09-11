@@ -40,7 +40,7 @@
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
 ## Handling events and updating the DOM
-* DOM updations are tricky without the use of components. The example below does not change the name on click of the button inspite of no errors:
+* DOM updations are tricky without the use of components. The example below code does not change the name on click of the button inspite of no errors in the console:
 * https://jsfiddle.net/syrilster/40gfL7ey/5/
     ```
         let name = "Syril";
