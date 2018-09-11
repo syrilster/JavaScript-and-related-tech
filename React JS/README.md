@@ -10,7 +10,7 @@
     ```
 * const and let are new keywords in ES6 used to create constants and variables. let is similar to var with only few differences. Ex:
     ```
-    function allyIlliterate() {
+    function ES6Example() {
     //tuce is *not* visible out here
 
     for( let tuce = 0; tuce < 5; tuce++ ) {
@@ -21,7 +21,7 @@
     //tuce is *not* visible out here
     }
 
-    function byE40() {
+    function ES5Example() {
         //nish *is* visible out here
 
         for( var nish = 0; nish < 5; nish++ ) {
