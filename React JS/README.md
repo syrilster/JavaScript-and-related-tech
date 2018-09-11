@@ -152,7 +152,7 @@
 	
 	changeName() {
 		this.setState({
-			name: 'Anju'
+		  name: 'Anju'
 		});
 	}
 	
@@ -177,11 +177,11 @@
 		
 		return (
 		<div>
-			<p>{this.state.name}</p>
-			{updateParagraph}
-			<button onClick={this.changeName.bind(this)}>Change Me</button><br></br>
-			<button onClick={this.addElements.bind(this)}>Add Element</button>
-			<ul>{list}</ul>
+		<p>{this.state.name}</p>
+		{updateParagraph}
+		<button onClick={this.changeName.bind(this)}>Change Me</button><br></br>
+		<button onClick={this.addElements.bind(this)}>Add Element</button>
+		<ul>{list}</ul>
 		</div>
 		);	
 	     }
