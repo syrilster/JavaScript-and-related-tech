@@ -190,3 +190,15 @@
 
 	const element = ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
 	```
+## Setting styles dynamically
+* Adding style to the above example:
+  ```
+    let list = this.state.elements.map(
+	(el) => {
+	const liStyle = {
+	  backgroundColor: el % 2 == 0 ? 'blue' : 'green'
+	};
+	return <li key={el} style ={liStyle}>{el}</li>;
+      }
+   );
+  ```
