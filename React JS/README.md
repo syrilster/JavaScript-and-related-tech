@@ -87,7 +87,8 @@
                     ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
        ```
 ## Using state in React JS
-* Example to change the state using onClick event: **this.changeName.bind(this)** as this in the context of onClick event refers to the event listener component and not the App class by react and hence the binding is required.
+* Example to change the state using onClick event: **this.changeName.bind(this)** as this in the context of onClick event refers to the event listener component at run time and not the App class by react and hence the binding is required.
+* https://jsfiddle.net/syrilster/152v73az/1/
     ```
      class App extends React.Component {
         // A normal constructor to set the props in super and the initial state.
