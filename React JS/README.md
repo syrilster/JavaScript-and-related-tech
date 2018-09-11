@@ -87,10 +87,10 @@
                     ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
        ```
 ## Using state in React JS
-* Example to change the state using onClick event:
+* Example to change the state using onClick event: **this.changeName.bind(this)** as this in the context of onClick event refers to the event listener component and not the App class by react and hence the binding is required.
     ```
-        class App extends React.Component {
-
+     class App extends React.Component {
+        // A normal constructor to set the props in super and the initial state.
         constructor(props){
             super(props);
             this.state = {
@@ -98,6 +98,7 @@
             };
         }
 
+        // JS function to reset the state on click on a button
         changeName() {
             this.setState({
                 name: 'Anju'
