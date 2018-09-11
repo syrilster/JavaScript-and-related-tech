@@ -120,7 +120,7 @@
     const element = ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
     ```
 ## Rendering conditional content
-* using an if condition and the logic required:
+* using an if condition and the logic required:https://jsfiddle.net/syrilster/vru72sg6/2/
     ```
     render(){
 		let updateParagraph = '';
