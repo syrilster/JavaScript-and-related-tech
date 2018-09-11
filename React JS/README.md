@@ -110,11 +110,9 @@
                 <p>{this.state.name}</p>
                 <button onClick={this.changeName.bind(this)}>Change Me</button>
             </div>
-        );	
+            );	
+          }
         }
-    }
 
-
-    const element = 
-                ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
+    const element = ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
     ```
