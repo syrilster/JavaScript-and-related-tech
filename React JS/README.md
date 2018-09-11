@@ -159,22 +159,21 @@
 	addElements() {
 	const oldElements = this.state.elements;
 		this.setState({
-				elements: oldElements.concat(oldElements.length + 1)	
+		  elements: oldElements.concat(oldElements.length + 1)	
 		});
 	}
 	
 	render(){
 		let updateParagraph = '';
 		let list = this.state.elements.map(
-			(el) => {
-				return <li key={el}>{el}</li>;
-			}
+		  (el) => {
+		     return <li key={el}>{el}</li>;
+		  }
 		);
 		
 		if(this.state.name != this.props.name){
-			updateParagraph = <p> Name has been updated </p>;
+		  updateParagraph = <p> Name has been updated </p>;
 		}
-		
 		
 		return (
 		<div>
