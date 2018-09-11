@@ -213,3 +213,6 @@ changeInputMessage(event){
 <input type="text" value={this.state.message} onChange={this.changeInputMessage.bind(this)}></input>
 <p>{this.state.message}</p>
 ```
+## Using multiple components
+* https://jsfiddle.net/syrilster/x7wr4ohk/
+* Creating component using a function way has a benefit as it brings in immutability. The props can't or usually not changed in this case unlike the setState option in the class way of creating the component.
