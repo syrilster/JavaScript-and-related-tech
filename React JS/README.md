@@ -202,3 +202,14 @@
       }
    );
   ```
+## User input and two way styling
+```
+changeInputMessage(event){
+  this.setState({
+    message: event.target.value
+  });	
+}
+
+<input type="text" value={this.state.message} onChange={this.changeInputMessage.bind(this)}></input>
+<p>{this.state.message}</p>
+```
