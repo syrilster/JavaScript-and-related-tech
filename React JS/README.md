@@ -57,7 +57,7 @@
     ```
 ## React Component
 * Two ways to create a component:
-    * Write a function as a component with props and React will do the object mapping. Here props.name is set
+    * Write a function as a component with props and React will do the object mapping. Here props.name is set automatically by react.
         ```
         function App(props){
             return (
