@@ -8,7 +8,29 @@
     const element = React.createElement('p', null, 'Hello Syril')
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
-* const and let are new keywords in ES6 used to create constants and variables.
+* const and let are new keywords in ES6 used to create constants and variables. let is similar to var with only few differences. Ex:
+    ```
+    function allyIlliterate() {
+    //tuce is *not* visible out here
+
+    for( let tuce = 0; tuce < 5; tuce++ ) {
+        //tuce is only visible in here (and in the for() parentheses)
+        //and there is a separate tuce variable for each iteration of the loop
+    }
+
+    //tuce is *not* visible out here
+    }
+
+    function byE40() {
+        //nish *is* visible out here
+
+        for( var nish = 0; nish < 5; nish++ ) {
+            //nish is visible to the whole function
+        }
+
+        //nish *is* visible out here
+    }
+    ```
 
 ## Outputting Dynamic Content
 * Using a single braces unlike angular and Vue js as HTML in react is rendered in JS code. Example below:
