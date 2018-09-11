@@ -86,4 +86,35 @@
         const element = 
                     ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
        ```
+## Using state in React JS
+* Example to change the state using onClick event:
+    ```
+        class App extends React.Component {
 
+        constructor(props){
+            super(props);
+            this.state = {
+                name: props.name
+            };
+        }
+
+        changeName() {
+            this.setState({
+                name: 'Anju'
+            });
+        }
+
+        render(){
+            return (
+            <div>
+                <p>{this.state.name}</p>
+                <button onClick={this.changeName.bind(this)}>Change Me</button>
+            </div>
+        );	
+        }
+    }
+
+
+    const element = 
+                ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
+    ```
