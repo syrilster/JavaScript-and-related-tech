@@ -1,5 +1,6 @@
 ## What is React?
 * A Javascript library to build user interfaces using components.
+* Helps to write easy and maintainable piece of code which generates the HTML for the browser.
 
 ## How React JS and JSX works
 * JSX is an extension to java script which is enabled by React and it allows HTML like code in JS.
