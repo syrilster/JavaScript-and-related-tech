@@ -24,3 +24,28 @@
         //nish *is* visible out here
     }
     ```
+    
+## Arrow Functions
+* Solves the problem of using the **this keyword** within a function. It had issues with not keeping up with the right context at run time.
+* Usage as follows when having to change the values:
+    ```
+    const printMyDetails = (name, age) => {
+    console.log(name, age);
+    }
+
+    printMyDetails("Syril", 20);
+    ```
+* Usage when having to return a value:
+    ```
+    const multiply = (number) => {
+    return number * 2;
+    }
+    
+    or 
+    
+    const multiply = number => number * 2;
+
+    console.log("Final Number ", multiply(10));
+    
+    ```
+
