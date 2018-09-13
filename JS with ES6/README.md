@@ -134,7 +134,7 @@
 
     ```
 ## Spread and Rest operators
-* Spread operator
+* Spread operator: Used to split up array or object properties.
     ```
     1. Array demo:
     const numbers = [1,2,3];
@@ -161,3 +161,15 @@
     Output:
     -------
     {name: "Syril", age: 25}
+    
+* Rest operator: Used to accept multiple args like Java var args.
+    ```
+    const filterNumber = (...args) => {
+        return args.filter(el => el === 1)
+    }
+
+    console.log(filterNumber(1,2,3));
+    Output:
+    -------
+    [1]
+    ```
