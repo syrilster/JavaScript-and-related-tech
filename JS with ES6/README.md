@@ -49,7 +49,7 @@
     
     ```
 ## Exports and imports (Modules)
-* export default and then Regular Import.
+* Default export.
     ```
     Person.js
     ---------
@@ -64,7 +64,7 @@
     or
     import per from './Person' 
     ```
-* export const and then Named import. Note the use of {} and same const name.
+* Named export. Note the use of {} and same const name.
     ```
     Utility.js
     ----------
