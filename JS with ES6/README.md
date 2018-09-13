@@ -187,7 +187,11 @@
     3
     
     Ex: Object Destructuring
-    const {name} = {name:'Syril', age: 30};
+    const myObj = {
+        name: 'Syril',
+        age: 28
+    }
+    const {name} = myObj;
     console.log(name);
     
     Output:
