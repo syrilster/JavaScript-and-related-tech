@@ -48,4 +48,6 @@
     console.log("Final Number ", multiply(10));
     
     ```
-
+## Exports and imports (Modules)
+* export default and then Regular Import
+* export const and then Named import.
