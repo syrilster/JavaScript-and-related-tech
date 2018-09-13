@@ -174,7 +174,7 @@
     [1]
     ```
 ## Destructuring
-* Extract elemnts from the array or object and store them in variables.
+* Extract elements from the array or object and store them in variables. [] for Array and {} for Objects.
     ```
     Ex: Array Destructuring - To extract number 1 and 3 into different variables:
     const numbers = [1, 2, 3];
