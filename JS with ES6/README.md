@@ -133,3 +133,31 @@
     person.printDetails();
 
     ```
+## Spread and Rest operators
+* Spread operator
+    ```
+    1. Array demo:
+    const numbers = [1,2,3];
+    const newNumbers = [...numbers, 4];
+
+    console.log(newNumbers);
+    
+    Output:
+    -------
+    [1, 2, 3, 4]
+    
+    2: Object Demo
+    const person = {
+      name: 'Syril'
+    };
+
+    const newPerson = {
+      ...person,
+      age: 25
+    };
+
+    console.log(newPerson);
+    
+    Output:
+    -------
+    {name: "Syril", age: 25}
