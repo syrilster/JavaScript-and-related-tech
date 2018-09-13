@@ -83,4 +83,53 @@
     import * as bundled from './Utility' and then bundled.baseData can be used.
     ```
 ## Classes properties and methods
-* 
+* Next generation ES7 changes for constructor shown below:
+    ```
+    ES6
+    -----
+    constructor() {
+        this.myProperty = 'value';
+    }
+    
+    ES7 (No need to put property in constructor method and no need to invoke super())
+    ----
+    myProperty = 'value';
+    ```
+* Next generation ES7 changes for method shown below:
+    ```
+    ES6
+    ----
+    myMethod() {
+        // Some logic here
+    }
+    
+    ES7 (Using the arrow function)
+    ----
+    myMethod() = () => {
+        // Some logic here
+    }
+    ```
+* Full Example below:
+    ```
+    class Human {
+        gender = 'Male';
+
+        printGender() = () => {
+        console.log(this.gender);
+        }
+    }
+
+    class Person extends Human {
+      name = 'Syril';
+      gender = 'Female';
+
+      printDetails() = () =>{
+        console.log(this.name);
+      }
+
+    }
+
+    const person = new Person();
+    person.printDetails();
+
+    ```
