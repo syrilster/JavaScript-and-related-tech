@@ -52,13 +52,27 @@
 * export default and then Regular Import.
     ```
     Person.js
+    ---------
     const person = {
         name: 'Max'
     }
+    export default person
     
     App.js
+    --------
     import person from './Person' 
     or
     import per from './Person' 
     ```
-* export const and then Named import.
+* export const and then Named import. Note the use of {} and same const name.
+    ```
+    Utility.js
+    ----------
+    export const baseData = 10;
+    export const clean = () => {...}
+    
+    App.js
+    ------
+    import {baseData} from './Utility'
+    import {clean} from './Utility'
+    ```
