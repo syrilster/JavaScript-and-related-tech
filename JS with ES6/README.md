@@ -48,7 +48,7 @@
     console.log("Final Number ", multiply(10));
     
     ```
-## Exports and imports (Modules)
+## Exports and Imports (Modules)
 * Default export.
     ```
     Person.js
@@ -82,3 +82,5 @@
     or (Import all constants at once and have an alias)
     import * as bundled from './Utility' and then bundled.baseData can be used.
     ```
+## Classes properties and methods
+* 
