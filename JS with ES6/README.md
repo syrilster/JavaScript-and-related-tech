@@ -49,5 +49,16 @@
     
     ```
 ## Exports and imports (Modules)
-* export default and then Regular Import
+* export default and then Regular Import.
+    ```
+    Person.js
+    const person = {
+        name: 'Max'
+    }
+    
+    App.js
+    import person from './Person' 
+    or
+    import per from './Person' 
+    ```
 * export const and then Named import.
