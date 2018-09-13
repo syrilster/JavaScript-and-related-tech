@@ -1,5 +1,7 @@
 ## Understanding let and const
-* const and let are new keywords in ES6 used to create constants and variables. let is similar to var with only few differences. Ex:
+* const and let are new keywords in ES6 used to create constants and variables. 
+* const is used when you need to hold constant values and this cannot be re-assigned.
+* let is similar to var with only few differences. Ex:
     ```
     function ES6Example() {
     //tuce is *not* visible out here
