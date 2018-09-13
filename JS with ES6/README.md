@@ -173,3 +173,21 @@
     -------
     [1]
     ```
+## Destructuring
+* 
+
+## Array Functions
+* Iterate over the elements of an array using the map function
+    ```
+    const numbers = [1, 2, 3];
+
+    const doubledNumbers = numbers.map( (number) => {
+            return number * 2;
+        }
+    );
+
+    console.log(doubledNumbers);
+    output:
+    -------
+    [2. 4, 6]
+    ```
