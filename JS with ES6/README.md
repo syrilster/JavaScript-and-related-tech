@@ -174,7 +174,26 @@
     [1]
     ```
 ## Destructuring
-* 
+* Extract elemnts from the array or object and store them in variables.
+    ```
+    Ex: Array Destructuring - To extract number 1 and 3 into different variables:
+    const numbers = [1, 2, 3];
+
+    const [numberOne, , numberThree] = [...numbers];
+    console.log(numberOne, numberThree);
+    Output:
+    -------
+    1
+    3
+    
+    Ex: Object Destructuring
+    const {name} = {name:'Syril', age: 30};
+    console.log(name);
+    
+    Output:
+    -------
+    Syril
+    ```
 
 ## Array Functions
 * Iterate over the elements of an array using the map function
