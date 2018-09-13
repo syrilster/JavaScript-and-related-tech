@@ -64,7 +64,7 @@
     or
     import per from './Person' 
     ```
-* Named export. Note the use of {} and same const name.
+* Named export. Note the use of {} and same const name or use an alias.
     ```
     Utility.js
     ----------
@@ -74,5 +74,7 @@
     App.js
     ------
     import {baseData} from './Utility'
+    or 
+    import {baseData as data} from './Utility'
     import {clean} from './Utility'
     ```
