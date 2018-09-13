@@ -75,8 +75,10 @@
     ------
     import {baseData} from './Utility'
     or 
+    
     import {baseData as data} from './Utility'
     import {clean} from './Utility'
+    
     or (Import all constants at once and have an alias)
     import * as bundled from './Utility' and then bundled.baseData can be used.
     ```
