@@ -6,4 +6,4 @@
 
 * The index.html has the root div element.
 * Index.js has the ReactDOM.render with the JS selector looking for the root div and render a HTML from the App.js.
-* App.js has the HTML components to be rendered. Here we can include multiple sub components or routes to build the application code.
+* App.js has the render() method for the HTML components to be rendered. Here we can include multiple sub components or routes to build the application code.
