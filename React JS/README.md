@@ -6,7 +6,7 @@
   * Multi Page Application - Multiple HTML pages and content is rendered on the server. ReactDOM.render() call per widget.
 
 ## How React JS and JSX works
-* JSX is an extension to java script which is enabled by React and it allows HTML like code in JS.
+* JSX is an extension to JavaScript which is enabled by React and it allows HTML like code to be included in JS files.
 * The HTML is converted to something else by Babel transpiler. Example:
     ```
     ReactDOM.render(<p> Hello World !!</p>, document.querySelector('#demoApp'));
@@ -15,6 +15,15 @@
     const element = React.createElement('p', null, 'Hello Syril')
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
+## JSX Restrictions
+* Some words of HTML can't be used. In the below example: className is being used instead of class keyword for CSS class as class is a reserved keywprd in JS.
+   ```
+   <div className='someClassName'>
+   </div>
+   ```
+* The render() method can have only one root element and can't have multiple root elements returned. This is also a best practice so that one root element per component.
+
+
 ## Outputting Dynamic Content
 * Using a single braces unlike angular and Vue js as HTML in react is rendered in JS code. Example below:
     ```
