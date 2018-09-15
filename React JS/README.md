@@ -7,6 +7,7 @@
 
 ## How React JS and JSX works
 * JSX is an extension to JavaScript which is enabled by React and it allows HTML like code to be included in JS files.
+* JSX is just syntactic sugar for JavaScript, allowing you to write HTMLish code instead of nested React.createElement(...) calls.
 * The HTML is converted to something else by Babel transpiler. Example:
     ```
     ReactDOM.render(<p> Hello World !!</p>, document.querySelector('#demoApp'));
