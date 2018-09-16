@@ -32,6 +32,11 @@
     const element = <p> {name} </p>
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
+* props.children => used to ouput the child element dynamically passed with an element. For example: The hobby part can be rendered using the children property.
+	```
+	<Person name='Anju' age={20}>My hobby is: Knitting</Person>
+	```
+	
 ## Handling events and updating the DOM
 * DOM updations are tricky without the use of components. The example below code does not change the name on click of the button inspite of no errors in the console:
 * https://jsfiddle.net/syrilster/40gfL7ey/5/
