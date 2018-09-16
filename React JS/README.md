@@ -85,7 +85,8 @@
                     ReactDOM.render(<App name="Syril"/>, document.querySelector('#demoApp'));
        ```
 ## Using state in React JS
-* Example to change the state using onClick event: **this.changeName.bind(this)** as this in the context of onClick event refers to the event listener component at run time and not the App class by react and hence the binding is required.
+* Note: Do not use state to manipulate the state of elements in all the components. The best practice is to have state changes in the container component i.e. App.js
+* Example: To change the state using onClick event: **this.changeName.bind(this)** is used as the 'this' keyword in the context of onClick event refers to the event listener component at run time and not the App class by react and hence the binding is required.
 * **this.setState** informs react about the change in property and it will be rendered again.
 * **Function is stateless and class is a stateful component.** i.e. only in a React class you will be able to work with state.
 * https://jsfiddle.net/syrilster/152v73az/1/
