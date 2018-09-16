@@ -32,7 +32,7 @@
     const element = <p> {name} </p>
     ReactDOM.render(element, document.querySelector('#demoApp'));
     ```
-* props.children => used to ouput the child element dynamically passed with an element. For example: The hobby part can be rendered using the children property.
+* **props.children** => used to ouput the child element dynamically passed with an element. For example: The hobby part can be rendered using the children property.
 	```
 	<Person name='Anju' age={20}>My hobby is: Knitting</Person>
 	```
