@@ -119,6 +119,42 @@
 
     const element = ReactDOM.render(<App name="Syril" />, document.querySelector('#demoApp'));
     ```
+## Passing Method References between components
+* Example Below: The pattern is to use props to pass the method and parms to the component and access it on an event like shown below. **this.switchHandler.bind(this, 'pass the arg here')**
+  ```
+  Person.js
+  ---------
+  const person = (props) => {
+    return (
+        <div>
+        <p onClick={props.clickhandler}>This user's name is {props.name} aged {props.age}!!</p>
+        <p>{props.children}</p>
+        </div>
+    );
+  }
+
+  export default person;
+  
+  App.js
+  ------
+  switchHandler = (newName) => {
+    this.setState({
+      persons: [
+        {name: newName, age: 28}
+      ]
+     }
+    )
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Person name={this.state.persons[1].name} clickhandler={this.switchHandler.bind(this, 'Anju Ravindran')} 
+                age={this.state.persons[1].age}>My hobby is: Knitting</Person>
+      </div> 
+    );
+  }
+  ```
 ## Rendering conditional content
 * using an if condition and the logic required: https://jsfiddle.net/syrilster/vru72sg6/2/
     ```
