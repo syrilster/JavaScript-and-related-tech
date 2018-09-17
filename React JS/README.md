@@ -238,7 +238,7 @@
       }
    );
   ```
-## User input and two way styling
+## User input and Two way Data binding
 ```
 changeInputMessage(event){
   this.setState({
