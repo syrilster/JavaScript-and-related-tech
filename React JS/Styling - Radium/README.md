@@ -1,5 +1,5 @@
 ## Using Radium
-* To use advance styles such as hover, media queries and other pseudo selectors.
+* To use advance styles such as hover, other pseudo selectors and media queries.
 * npm install --save radium to install radium
 * import radium in the desired component file and enclose the component like show below:
     ```
