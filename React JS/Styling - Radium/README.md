@@ -40,3 +40,25 @@
         }
     };
     ```
+    
+## Enabling and using CSS modules
+* With CSS modules, you can write normal CSS code and make sure, that it only applies to a given component.
+* This simply automatically generate unique CSS class names for you. 
+* Example:
+    ```
+    Post.css
+    --------
+
+    .Post {
+        color: red;
+    }
+    
+    In Post Component
+    -----------------
+
+    import classes from './Post.css';
+
+    const post = () => (
+        <div className={classes.Post}>...</div>
+    );
+    ```
