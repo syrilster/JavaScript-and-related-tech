@@ -27,3 +27,16 @@
         color: "black"
     };
     ```
+## Using Media Queries using Radium
+* Import StyleRoot named export from radium and wrap the entire html element in the render()
+    ```
+    import Radium, { StyleRoot } from "radium";
+    ```
+* Define the style as below:
+    ```
+    let style = {
+        "@media (min-width: 500px)": {
+          width: "450px"
+        }
+    };
+    ```
