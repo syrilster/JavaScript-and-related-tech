@@ -20,7 +20,7 @@
         }
       };
   ```
-  * Change the sytle using syntax below:
+* Change the sytle using syntax below:
     ```
     buttonStyle[":hover"] = {
         backgroundColor: "salmon",
