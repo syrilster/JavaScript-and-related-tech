@@ -42,6 +42,11 @@
     ```
     
 ## Enabling and using CSS modules
+* Uisng the npm run eject and then accessing the webpack.config.dev.js file and adding the below to css section options:
+    ```
+    modules: true,
+    localIdentName: "[name]__[local]__[hash:base64:5]"
+    ```
 * With CSS modules, you can write normal CSS code and make sure, that it only applies to a given component.
 * This simply automatically generate unique CSS class names for you. 
 * Example:
