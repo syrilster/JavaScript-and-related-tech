@@ -42,7 +42,7 @@
     ```
     
 ## Enabling and using CSS modules
-* Uisng the npm run eject and then accessing the webpack.config.dev.js file and adding the below to css section options:
+* Using the npm run eject and then accessing the webpack.config.dev.js file and adding the below to css section options:
     ```
     modules: true,
     localIdentName: "[name]__[local]__[hash:base64:5]"
