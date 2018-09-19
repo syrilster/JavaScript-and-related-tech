@@ -4,4 +4,5 @@
   * constructor() - call super(props) and then set the state. Do not make calls to a web server API.
   * **componentWillMount()** - Defined by React. Not really used often and it is mostly used for last minute optimizations ans state updations.
   * render() - This is called to prepare and structure the JSX code and also to render child components. Calling this does not mean that the browser DOM is updated. This will work with the React virtual DOM.
+  * render child components.
   * **componentDidMount()** - Component was successfully mounted. AJAX requests should go in the componentDidMount lifecycle event. Do not update the state of the components as it will trigger render().
