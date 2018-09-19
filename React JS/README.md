@@ -55,7 +55,7 @@
     ```
 ## React Component
 * Two ways to create a component:
-    * Write a function as a component with props and React will do the object mapping. Here props.name is set automatically by react.
+    * Write a function as a component with props and React will do the object mapping. Here props.name is set automatically by react. **Have no access to state and life cycle hooks.**
         ```
         function App(props){
             return (
