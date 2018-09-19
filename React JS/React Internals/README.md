@@ -7,3 +7,4 @@
   * render child components.
   * **componentDidMount()** - Component was successfully mounted. AJAX requests should go in the componentDidMount lifecycle event. Do not update the state of the components as it will trigger render().
 * componentWillUnmount() - There also is one Lifecycle method which gets executed (when implemented) right before a Component is removed from the DOM.
+* shouldComponentUpdate(nextProps, nextState) - Let's the user to return false if the update process needs to be cancelled and the DOM won't show the updated elements as the render method is not called by React.
