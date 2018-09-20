@@ -8,3 +8,7 @@
   * **componentDidMount()** - Component was successfully mounted. AJAX requests should go in the componentDidMount lifecycle event. Do not update the state of the components as it will trigger render().
 * componentWillUnmount() - There also is one Lifecycle method which gets executed (when implemented) right before a Component is removed from the DOM.
 * shouldComponentUpdate(nextProps, nextState) - Let's the user to return false if the update process needs to be cancelled and the DOM won't show the updated elements as the render method is not called by React.
+
+## React's DOM updating strategy
+* React keeps 2 copies of the virtual DOM(old and the recent virtual DOM) and applies a diffing algorithm to check and render the parts which changed and not the entire DOM.
+* After the virtual DOM has the latest and greatest changes have been identified this is then merged to the real browser DOM. For example if a button text has changed then React will only update this change in the real browser DOM.
