@@ -12,3 +12,4 @@
 ## React's DOM updating strategy
 * React keeps 2 copies of the virtual DOM(old and the recent virtual DOM) and applies a diffing algorithm to check and render the parts which changed and not the entire DOM.
 * After the virtual DOM has the latest and greatest changes have been identified this is then merged to the real browser DOM. For example if a button text has changed then React will only update this change in the real browser DOM.
+* More about the diffing process here: https://reactjs.org/docs/reconciliation.html
