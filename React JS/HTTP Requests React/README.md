@@ -1,5 +1,5 @@
 ## HTTP Requests in react
-* Using axios library: https://github.com/axios/axios to make a HTTP ajax request in the componentDidMount() method
+* Using axios library: https://github.com/axios/axios to make a HTTP Ajax request in the componentDidMount() method
 * Make fake requests using https://jsonplaceholder.typicode.com/
   ```
   state = {
