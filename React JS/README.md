@@ -255,3 +255,21 @@ changeInputMessage(event){
 
 ## Assignment Solution
 * https://jsfiddle.net/syrilster/Lhkp9ax6/
+
+## Returning Adjacent Element
+* React render() method needs one and only one wrapping HTML element. For this reason we usually have a <div> and put all the child elements in there. This can be avoided as shown below.
+* Using a Higher Order Function:
+  ```
+  Aux.js
+  -------
+  const aux = (props) => props.children;
+  export default aux;
+	
+  In render method:
+  -----------------
+  render(){
+  	<Aux>
+	  //Child HTML elements here without the need of a <div>
+	</Aux>
+  }
+  ```
