@@ -17,4 +17,4 @@
   }
   ```
 * **componentDidUpdate()** method to make call to HTTP requests in case of any updation of the components.
-**Note that if the state is updated in this method then it's going to cause a infinite loop of render() calls.**
+**Note that if the state is updated in this method then it's going to cause a infinite loop of render() calls.** Hence make the HTTP calls with some conditional logic.
