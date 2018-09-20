@@ -16,3 +16,4 @@
       });
   }
   ```
+* **componentDidUpdate()** method to make call to HTTP requests in case of any updation of the components.
