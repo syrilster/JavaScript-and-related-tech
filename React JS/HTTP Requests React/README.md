@@ -44,3 +44,11 @@
       });
     };
     ```
+* Using catch block to handle errors:
+    ```
+    .catch(error => {
+        this.setState({
+          hasError: true
+        });
+      });
+    ```
