@@ -55,15 +55,15 @@
 * Using interceptors to globally modify/capture the actual request:
     ```
     axios.interceptors.request.use(
-  request => {
-    console.log(request);
-    return request;
-  },
-  error => {
-    console.log(error);
-    return Promise.reject(error);
-  }
-  );
+      request => {
+        console.log(request);
+        return request;
+      },
+      error => {
+        console.log(error);
+        return Promise.reject(error);
+      }
+      );
 
   axios.interceptors.response.use(
     response => {
