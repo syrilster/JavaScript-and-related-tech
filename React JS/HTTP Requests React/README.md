@@ -34,3 +34,13 @@
       });
   };
   ```
+* Delete data using:
+    ```
+    deletePostHandler = () => {
+    axios
+      .delete("https://jsonplaceholder.typicode.com/posts/" + this.props.id)
+      .then(response => {
+        console.log(response);
+      });
+    };
+    ```
