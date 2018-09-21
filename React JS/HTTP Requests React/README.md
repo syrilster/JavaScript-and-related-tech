@@ -76,3 +76,9 @@
     }
   );
     ```
+* Setting default configs using axios in the index.js file:
+    ```
+    axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";
+    axios.defaults.headers.common["Authorization"] = "AUTH_TOKEN";
+    axios.defaults.headers.post["Content-Type"] = "application/json";
+    ```
