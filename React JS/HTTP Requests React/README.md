@@ -18,3 +18,19 @@
   ```
 * **componentDidUpdate()** method to make call to HTTP requests in case of any updation of the components.
 **Note that if the state is updated in this method then it's going to cause a infinite loop of render() calls.** Hence make the HTTP calls with some conditional logic.
+* Post data to server:
+  ```
+  postDatahandler = () => {
+    const postData = {
+      title: this.state.title,
+      body: this.state.content,
+      author: this.state.author
+    };
+    
+    axios
+      .post("https://jsonplaceholder.typicode.com/posts", postData)
+      .then(response => {
+        console.log(response);
+      });
+  };
+  ```
