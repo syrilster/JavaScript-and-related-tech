@@ -134,7 +134,7 @@
 
     ```
 ## Spread and Rest operators
-* Spread operator: Used to split up array or object properties.
+* Spread operator: Used to copy the desired array or object properties and add few extra elements/properties.
     ```
     1. Array demo:
     const numbers = [1,2,3];
