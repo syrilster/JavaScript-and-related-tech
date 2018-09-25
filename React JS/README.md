@@ -289,3 +289,20 @@ changeInputMessage(event){
 	</>
 	Behind the scenes, it does the same our Aux  component did.
 	```
+	
+## Issues
+* onChange method setState not updating the state value immediately:
+* From the reactjs docs: setState() does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value.
+* What you can do is pass a callback function to setState which is triggered once the state has been updated:
+  ```
+  currencyFromChange = event => {
+    this.setState(
+      {
+        fromCurrency: event.target.value
+      },
+      () => {
+        this.getExchangeValue();
+      }
+    );
+  };
+  ```
