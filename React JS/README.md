@@ -293,7 +293,7 @@ changeInputMessage(event){
 ## Issues
 * onChange method setState not updating the state value immediately:
 * From the reactjs docs: setState() does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value.
-* What you can do is pass a callback function to setState which is triggered once the state has been updated:
+* What you can do is pass a callback function to setState which is triggered once the state has been updated: In the below example the method getExchangevalue() is using this.state.fromCurrency.
   ```
   currencyFromChange = event => {
     this.setState(
